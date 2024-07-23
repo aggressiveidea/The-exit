@@ -28,14 +28,9 @@ public class PlayerMovements : MonoBehaviour
             Die();
         }
     }
-    public void Die()
+    public static void Die()
     {
-        Debug.Log("Player has died.");
-        Invoke("RestartGame", 2f); // Delay to show the death effect or message
-    }
-
-    void RestartGame()
-    {
+        alive = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
