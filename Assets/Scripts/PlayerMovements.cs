@@ -32,6 +32,11 @@ public class PlayerMovements : MonoBehaviour
     public void Die()
     {
         alive = false;
+        Invoke("Restart", 2);
+        
+    }
+    void Restart()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
