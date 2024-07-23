@@ -7,13 +7,14 @@ public class Obstacles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerMovements = GameObject.FindObjectOfType<PlayerMovements>();
+       
+        playerMovements = GameObject.FindAnyObjectByType<PlayerMovements>();
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(UnityEngine.Collision collision)
     {
         if (collision.gameObject.name == "Player")
         {
-            PlayerMovements.Die();
+            playerMovements.Die();
         }
     }
 
