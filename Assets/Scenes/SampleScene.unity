@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1cd760b815d48ae498bc19af6bfdc5ce, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -443,43 +443,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.4188491
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.044326454
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.9917402
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.0063137454
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.0050120116
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.9995446
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.029080145
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 3.329
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180.741
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 0.596
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 867f0fd1f90e0ea46bb2606352379cc6, type: 3}
       propertyPath: m_Name
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 1887524051}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

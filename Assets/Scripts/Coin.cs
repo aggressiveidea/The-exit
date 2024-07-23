@@ -5,32 +5,44 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public float turnSpeed;
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.GetComponent<Obstacles>() != null)
+        Debug.Log("Triggered by: " + other.gameObject.name);
+
+        if (other.gameObject.GetComponent<Obstacles>() != null)
         {
+            Debug.Log("Hit an obstacle, destroying coin.");
             Destroy(gameObject);
             return;
         }
-        //ida machi l player li colida m3a the coin mysra walou
-        if(other.gameObject.name != "Player")
+
+        if (other.gameObject.name != "Player")
         {
+            Debug.Log("Not the player, ignoring collision.");
             return;
         }
-        GameManager.inst.score++;
-        //bach the coin ttdespara 
+
+        if (GameManager.inst == null)
+        {
+            Debug.LogError("GameManager.inst is null!");
+        }
+        else
+        {
+            GameManager.inst.score++;
+        }
+
+        Debug.Log("Coin collected by player, destroying coin.");
         Destroy(gameObject);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        // Initialization code if needed
     }
-       // Update is called once per frame
+
     void Update()
     {
-        //Time.deltaTime al mouda bin 
         transform.Rotate(0, 0, turnSpeed * Time.deltaTime);
     }
 }

@@ -6,10 +6,11 @@ public class Obstacles : MonoBehaviour
 
     void Start()
     {
-       
+        
         playerMovements = GameObject.FindAnyObjectByType<PlayerMovements>();
     }
 
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -17,9 +18,16 @@ public class Obstacles : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerMovements.Die();
+        }
+    }
+
     void Update()
     {
-
+        // Update logic if any
     }
 }
-
