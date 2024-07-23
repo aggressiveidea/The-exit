@@ -6,10 +6,10 @@ public class Obstacles : MonoBehaviour
 
     void Start()
     {
-        playerMovements = GameObject.FindObjectOfType<PlayerMovements>();
+       
+        playerMovements = GameObject.FindAnyObjectByType<PlayerMovements>();
     }
 
-    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
